@@ -2,9 +2,11 @@ package lezione5;
 
 class A {
 	
+	
 	public A() {
 		System.out.println("Sono il costruttore di A");
 	}
+	
 }
 
 class B extends A {
@@ -12,6 +14,7 @@ class B extends A {
 	public B() {
 		System.out.println("Sono il costruttore di B");
 	}
+	
 	
 	public B(int i) {
 		this();
