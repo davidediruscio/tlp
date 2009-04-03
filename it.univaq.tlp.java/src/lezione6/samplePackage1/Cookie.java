@@ -5,6 +5,6 @@ public class Cookie {
 	   System.out.println("Cookie constructor");
 	  }
 	   void bite() { System.out.println("bite"); }
-	   //public bite() { System.out.println("bite"); }
+	   //public void bite() { System.out.println("bite"); }
 	   //protected void bite() { System.out.println("bite"); }
 	} ///:~

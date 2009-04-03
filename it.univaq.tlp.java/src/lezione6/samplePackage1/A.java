@@ -1,6 +1,6 @@
 package lezione6.samplePackage1;
 
- class A {
+  class A {
 	/**
 	 * @param args
 	 */
