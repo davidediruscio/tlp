@@ -6,7 +6,8 @@ package lezione7;
 // www.BruceEckel.com. See copyright notice in CopyRight.txt.
 
 class Gizmo {
-  public void spin() {}
+
+	public void spin() {}
 }
 
 public class FinalArguments {
@@ -15,7 +16,7 @@ public class FinalArguments {
   }
   void without(Gizmo g) {
     g = new Gizmo(); // OK -- g not final
-    g.spin();
+
   }
   // void f(final int i) { i++; } // Can't change
   // You can only read from a final primitive:
@@ -24,5 +25,6 @@ public class FinalArguments {
     FinalArguments bf = new FinalArguments();
     bf.without(null);
     bf.with(null);
+
   }
 } ///:~
