@@ -17,7 +17,7 @@ final class Dinosaur {
 //! class Further extends Dinosaur {}
 // error: Cannot extend final class 'Dinosaur'
 
-public class Jurassic {
+public class Jurassic  {
   public static void main(String[] args) {
     Dinosaur n = new Dinosaur();
     n.f();

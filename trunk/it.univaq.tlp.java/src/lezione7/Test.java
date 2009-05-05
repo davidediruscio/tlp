@@ -13,6 +13,8 @@ class Test {
 	      //! Point.ORIGIN = new Point(1000, 1000); //ERRORE
 	      Point.ORIGIN.x = 400;                 //OK
 	      System.out.println("ORIGIN.x:" + Point.ORIGIN.x);
+	      System.out.println("p1.ORIGIN.x:" + p1.ORIGIN.x + "p2.ORIGIN.x:" + p2.ORIGIN.x);
+	      
 	   }
 	}
 
