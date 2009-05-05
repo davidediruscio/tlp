@@ -11,7 +11,7 @@ class Point2 {
 }
 
 public class RealPoint extends Point2 {
-	  float x = 0.0f, y = 0.0f;
+	  float x = 1.0f, y = 0.0f;
 	  void move(int dx, int dy) { 
 			move( (float)dx, (float)dy );
 	  }
@@ -19,7 +19,16 @@ public class RealPoint extends Point2 {
 			x += dx; y+=dy;
 	  }
 	  
-	 //! float getX() { return x; }             //ERRORE
+	  int getSuperX(){
+		  return super.x;
+		  
+	  }
+	  
+	  float getMyX() {
+		  return x;
+	  }
+	  
+	 //!float getMyX() { return x; }             //ERRORE
 	 //! float getY() { return y; }             //ERRORE
 
 }

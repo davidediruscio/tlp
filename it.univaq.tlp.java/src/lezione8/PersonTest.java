@@ -16,10 +16,10 @@ abstract class Person {
 	   }
 	}
 
-class Employee2 extends Person {  
+class Employee3 extends Person {  
 	   private double salary;
 	   private Date hireDay;
-	   public Employee2(String n, double s, int year, int month, int day) {  
+	   public Employee3(String n, double s, int year, int month, int day) {  
 	      super(n);
 	      salary = s;
 	      GregorianCalendar calendar = new GregorianCalendar(year, month - 1, day);
@@ -59,7 +59,7 @@ public class PersonTest {
    public static void main(String[] args) {  
       Person[] people = new Person[2];
 
-      people[0] = new Employee2("Harry Hacker", 50000, 1989, 10, 1);
+      people[0] = new Employee3("Harry Hacker", 50000, 1989, 10, 1);
       people[1] = new Student("Maria Morris", "computer science");
 
       for (int i=0; i<people.length; i++)
