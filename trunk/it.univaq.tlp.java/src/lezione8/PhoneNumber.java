@@ -20,18 +20,22 @@ public final class PhoneNumber {
 	  }
 	   
 	   //Prova a commentare la definizione del metodo
-	   public boolean equals(Object o) {
-	     if (o == this) return true;
+	  
+	  public boolean equals(Object o) {
+	     if (o == this) return true;					//Proprietà riflessiva
 	     if (!(o instanceof PhoneNumber)) return false;
 	     PhoneNumber pn = (PhoneNumber)o;
 	     return pn.extension == extension && pn.exchange == exchange && 
 	            pn.areaCode == areaCode;
 	   }
-	   
+	  
+	
 	   //Prova a commentare la definizione del metodo
 	    public String toString() {
 		   return "("+ areaCode +")" + exchange + "-" + extension;
 	   }
+	  
+	   
 }
 
 class PhoneNumberTest {
@@ -44,6 +48,9 @@ class PhoneNumberTest {
 		float f = Float.parseFloat("9.4");
 
 		System.out.println(p1.equals(p2));
+		System.out.println(p1.hashCode());
+		System.out.println(p1.hashCode());
+		System.out.println(p2.hashCode());
 		System.out.println(p1.toString());
 	}
 	
