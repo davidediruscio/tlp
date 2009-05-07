@@ -10,7 +10,7 @@ abstract class List {
     return new Nil();
   }
    abstract List copy();
-   abstract List add(int i);
+   abstract List add(int i) ;
 }
 
 class Nil extends List{
@@ -27,7 +27,7 @@ class Nil extends List{
   List copy() {
     return this;
   }
-  List add(int i){
+  List add(int i)  {
     return new Cons(i, this);
   }
 }
@@ -59,11 +59,12 @@ class Cons extends List {
   List copy() {
     return new Cons(hd, tl.copy());
   }
-   List add(int i) {
-    if (i < hd) {
+  	
+  List add(int i) {
+	if (i < hd) {
       return new Cons(i, copy());
     }else if (i == hd) {
-      return copy();
+       return copy();
     }else {
       return new Cons(hd, tl.add(i));
     }
@@ -78,7 +79,6 @@ public class ListTest {
 		System.out.println(l.sorted());
 		l.add(2);
 
-		
 	}
 	
 }
