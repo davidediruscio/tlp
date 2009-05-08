@@ -18,7 +18,8 @@ public class TestCheckedException {
             System.out.println("File non trovato");
          }
          finally {
-               if (reader!=null) {
+             System.out.println("Blocco sempre eseguito");  
+        	 if (reader!=null) {
                   try {
                        reader.close();
                   }

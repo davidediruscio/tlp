@@ -2,6 +2,7 @@ package lezione9;
 
 
 abstract class Glyph {
+
   abstract void draw();
   Glyph() {
     System.out.println("Glyph() before draw()");

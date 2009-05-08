@@ -13,7 +13,7 @@ public class Human {
       System.err.println("Caught Sneeze");
     } catch(Annoyance a) {
       System.err.println("Caught Annoyance");
-    }
+    } 
  
   }
 } 

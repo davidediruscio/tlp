@@ -1,5 +1,8 @@
 package esercizi;
 
+class ListException extends Exception{
+	
+}
 
 
 abstract class List {
@@ -10,7 +13,7 @@ abstract class List {
     return new Nil();
   }
    abstract List copy();
-   abstract List add(int i) ;
+   abstract List add(int i) throws ListException ;
 }
 
 class Nil extends List{
@@ -60,11 +63,12 @@ class Cons extends List {
     return new Cons(hd, tl.copy());
   }
   	
-  List add(int i) {
+  List add(int i)  throws ListException {
 	if (i < hd) {
       return new Cons(i, copy());
     }else if (i == hd) {
-       return copy();
+    	throw new ListException();
+       //return copy();
     }else {
       return new Cons(hd, tl.add(i));
     }
@@ -77,7 +81,12 @@ public class ListTest {
 	public static void main(String[] args) {
 		List l = new Cons(1, new Cons(3, new Nil()));
 		System.out.println(l.sorted());
-		l.add(2);
+		try {
+			l.add(2);
+		} catch (ListException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	

@@ -24,6 +24,7 @@ public class TestMultiCheckedException {
             System.out.println( "Eccezione in lettura!" );
          }
          finally {
+        	 System.out.println("Blocco eseguito");
               if ( reader != null ) {
                   try {
                       reader.close();

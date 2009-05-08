@@ -16,8 +16,7 @@ public class Rethrowing {
       throw e;
     }
   }
-  public static void
-  main(String[] args) throws Throwable {
+  public static void main(String[] args) throws Throwable {
     try {
       g();
     } catch(Exception e) {
