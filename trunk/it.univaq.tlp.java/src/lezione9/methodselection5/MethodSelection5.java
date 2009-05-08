@@ -13,6 +13,6 @@ class Test {
 	}
 	public static void main(String[] args) {
 		ColoredPoint cp = new ColoredPoint();
-		//!test(cp, cp);											// Ambiguous
+		//test(cp, cp);											// Ambiguous
 	}
 }
