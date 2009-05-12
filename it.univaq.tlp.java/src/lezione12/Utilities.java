@@ -9,7 +9,7 @@ public class Utilities {
  
   public static void main(String[] args) {
     List list = Arrays.asList(
-     "one Two three Four five six one".split(" "));
+     "one Two three Four five six one Four five six one".split(" "));
     //"one two three four five six one".split(" "));
      
   
@@ -28,7 +28,7 @@ public class Utilities {
       Collections.min(list, comp));
     
     List sublist =
-      Arrays.asList("Four five six".split(" "));
+      Arrays.asList("Four five six one".split(" "));
     
     System.out.println("indexOfSubList: " +
       Collections.indexOfSubList(list, sublist));
@@ -49,7 +49,8 @@ public class Utilities {
       Arrays.asList("in the matrix".split(" "));
     Collections.copy(list, source);
     System.out.println("copy: " + list);
-    Collections.swap(list, 0, list.size() - 1);
+    //Collections.swap(list, 0, list.size() - 1);
+    Collections.swap(list, 0, 5);
     System.out.println("swap: " + list);
     Collections.fill(list, "pop");
     System.out.println("fill: " + list);

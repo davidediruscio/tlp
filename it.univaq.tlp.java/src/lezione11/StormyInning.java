@@ -10,7 +10,7 @@ abstract class Inning {
 
   public void event() throws BaseballException {
     // In realtà non viene sollevata nessuna eccezione pero' in questo modo si costringe
-	// il programmatore ad intercettare tutte le eccezioni che possno essere aggiunte nelle versioni
+	// il programmatore ad intercettare tutte le eccezioni che possono essere aggiunte nelle versioni
 	// di event() sovrapposte nelle sottoclasse
   }
   
@@ -22,7 +22,8 @@ abstract class Inning {
 
 class StormException extends Exception {}
 class RainedOut extends StormException {}
-class PopFoul extends Foul {}
+class PopFoul extends Foul { }
+
 
 interface Storm {
   public void event() throws RainedOut;
@@ -52,7 +53,9 @@ public class StormyInning extends Inning implements Storm {
   public void event() {}
 
   // Overridden methods can throw inherited exceptions:
-  public void atBat() throws PopFoul {}
+  public void atBat() throws PopFoul {
+	  throw new PopFoul();
+  }
   
   
   public static void main(String[] args) {
@@ -66,8 +69,7 @@ public class StormyInning extends Inning implements Storm {
     } catch(BaseballException e) {
       System.err.println("Generic baseball exception");
     }
-
-    // Strike not thrown in derived version.
+ // Strike not thrown in derived version.
     try {
     	
       // What happens if you upcast?
@@ -85,5 +87,6 @@ public class StormyInning extends Inning implements Storm {
     } catch(BaseballException e) {
       System.err.println("Generic baseball exception");
     }
+    
   }
 } 
