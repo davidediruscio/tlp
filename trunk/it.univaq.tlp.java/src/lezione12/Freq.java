@@ -5,8 +5,11 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
+
 public class Freq { 
 	private static final Integer ONE = new Integer(1); 
+	
+	//1 1 2 tre tre prova 3 prova prova
 	public static void main(String args[]) { 
 		Map m = new HashMap(); 
 		// Initialize frequency table from command line 
@@ -39,8 +42,10 @@ public class Freq {
 		System.out.println("------------------------");
 		System.out.println("sotto-mappa:");
 		Map m2 = new HashMap(); 
-		m2.put("1",2);
 		m2.put("2",1);
+		m2.put("1",2);
+		//m2.put("4", 5);
+
 
 		
 		//m2 sotto-mappa di m1

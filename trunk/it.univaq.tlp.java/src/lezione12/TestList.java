@@ -32,5 +32,6 @@ public class TestList {
         System.out.println(list);
         System.out.println(o+" "+i1+" "+b+" "+i2+" "+s);
         list.clear();                           // Remove all elements
+        System.out.println(list);
     }
 }

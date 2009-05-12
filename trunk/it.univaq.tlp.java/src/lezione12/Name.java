@@ -10,8 +10,8 @@ public class Name implements Comparable {
         this.lastName = lastName;
     }
 
-    public String firstName() {return firstName;}
-    public String lastName()  {return lastName;}
+    public String getFirstName() {return firstName;}
+    public String fetLastName()  {return lastName;}
 
     public boolean equals(Object o) {
         if (this == o ) return true;
@@ -30,10 +30,12 @@ public class Name implements Comparable {
 	    return firstName + " " + lastName;
 	}
 	
+ 
 	public int compareTo(Object o) {
 	    Name n = (Name)o;
 	    int lastCmp = lastName.compareTo(n.lastName);
 	    return (lastCmp!=0 ? lastCmp : firstName.compareTo(n.firstName));
 	}
+
 
 }
