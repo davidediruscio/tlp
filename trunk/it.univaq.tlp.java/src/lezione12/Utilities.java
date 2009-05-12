@@ -9,8 +9,9 @@ public class Utilities {
  
   public static void main(String[] args) {
     List list = Arrays.asList(
-      "one Two three Four five six one".split(" "));
-    
+     "one Two three Four five six one".split(" "));
+    //"one two three four five six one".split(" "));
+     
   
     
     System.out.println(list);
