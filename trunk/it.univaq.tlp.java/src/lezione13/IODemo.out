@@ -1,0 +1,110 @@
+1: package lezione13;
+2: 
+3: 
+4: import java.io.*;
+5: 
+6: public class IOStreamDemo {
+7:  
+8:   // Throw exceptions to console:
+9:   public static void main(String[] args) throws IOException {
+10:     // 1. Reading input by lines:
+11:     BufferedReader in = new BufferedReader(
+12:       new FileReader("src/lezione13/IOStreamDemo.java"));
+13:     String s, s2 = new String();
+14:     while((s = in.readLine())!= null)
+15:       s2 += s + "\n";
+16:     in.close();
+17:  
+18:     // 1b. Reading standard input:
+19:     BufferedReader stdin = new BufferedReader(
+20:       new InputStreamReader(System.in));
+21:     System.out.print("Enter a line:");
+22:     System.out.println(stdin.readLine());
+23:  
+24: 
+25:     // 2. Input from memory
+26:     StringReader in2 = new StringReader(s2);
+27:     int c;
+28:     while((c = in2.read()) != -1)
+29:       System.out.print((char)c);
+30:  
+31: 
+32:     // 3. Formatted memory input
+33:     try {
+34:       DataInputStream in3 = new DataInputStream(
+35:         new ByteArrayInputStream(s2.getBytes()));
+36:       while(true)
+37:         System.out.print((char)in3.readByte());
+38:     } catch(EOFException e) {
+39:       System.err.println("End of stream");
+40:     }
+41: 
+42:     // 4. File output
+43:     try {
+44:       BufferedReader in4 = new BufferedReader(
+45:         new StringReader(s2));
+46:       PrintWriter out1 = new PrintWriter(
+47:       	new BufferedWriter(new FileWriter("src/lezione13/IODemo.out")));
+48:       
+49:       int lineCount = 1;
+50:       while((s = in4.readLine()) != null )
+51:     	  out1.println(lineCount++ + ": " + s);
+52:       out1.close();
+53:     } catch(EOFException e) {
+54:       System.err.println("End of stream");
+55:     }
+56:     
+57:     // 5. Storing & recovering data
+58:     try {
+59:       DataOutputStream out2 = new DataOutputStream(
+60:         new BufferedOutputStream(
+61:           new FileOutputStream("src/lezione13/Data.txt")));
+62:       out2.writeDouble(3.14159);
+63:       out2.writeUTF("That was pi");
+64:       out2.writeDouble(1.41413);
+65:       out2.writeUTF("Square root of 2");
+66:       out2.close();
+67:       DataInputStream in5 = new DataInputStream(
+68:         new BufferedInputStream(
+69:           new FileInputStream("src/lezione13/Data.txt")));
+70:       // Must use DataInputStream for data:
+71:       System.out.println(in5.readDouble());
+72:       // Only readUTF() will recover the
+73:       // Java-UTF String properly:
+74:       System.out.println(in5.readUTF());
+75:       // Read the following double and String:
+76:       System.out.println(in5.readDouble());
+77:       System.out.println(in5.readUTF());
+78:     } catch(EOFException e) {
+79:       throw new RuntimeException(e);
+80:     }
+81: 
+82:     // 6. Reading/writing random access files
+83:     RandomAccessFile rf = new RandomAccessFile("src/lezione13/rtest.dat", "rw");
+84:     for(int i = 0; i < 10; i++)
+85:       rf.writeDouble(i*1.414);
+86:     rf.close();
+87:     rf = new RandomAccessFile("src/lezione13/rtest.dat", "rw");
+88:     rf.seek(5*8);
+89:     rf.writeDouble(47.0001);
+90:     rf.close();
+91:     rf = new RandomAccessFile("src/lezione13/rtest.dat", "r");
+92:     for(int i = 0; i < 10; i++)
+93:       System.out.println("Value " + i + ": " +
+94:         rf.readDouble());
+95:     rf.close();
+96:     
+97:    // RandomAccessFile rf = new RandomAccessFile("src/lezione13/rtest.dat", "rw");
+98:     for(int i = 0; i < 10; i++)
+99:       rf.writeChar(100);
+100:     for(int i = 0; i < 10; i++)
+101:         System.out.println("Value " + i + ": " +
+102:           rf.readChar());
+103:       rf.close();
+104:       
+105:     
+106:     
+107:     
+108:   
+109:   }
+110: } 
