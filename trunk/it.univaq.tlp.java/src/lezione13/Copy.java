@@ -1,5 +1,6 @@
 package lezione13;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -13,14 +14,17 @@ public class Copy {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		
 		int aux;
-		FileReader fr = new FileReader("src/lezione13/Copy.java");
+		
+		BufferedReader bin = new BufferedReader(new FileReader("src/lezione13/Copy.java"));
 		FileWriter fw = new FileWriter("src/lezione13/Copybackup.java");
 
-		while ( (aux=fr.read()) != -1){
+		while ( (aux=bin.read()) != -1){
 			fw.write(aux);
 		}
-		fw.flush();
 		
+		fw.flush();
+		bin.close();
+		fw.close();
 		
 
 	}
