@@ -18,8 +18,8 @@ public class DataOutputStreamDemo {
 		
 		Float f = new Float("3.14");
 		
-		ps.print(f);
-		//dos.writeFloat(f);
+		//ps.print(f);
+		dos.writeFloat(f);
 			
 
 	}

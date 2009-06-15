@@ -25,17 +25,18 @@ public class Echo {
 		while ( (aux = br.readLine()) != null){						
 			System.out.println(aux);
 		}
-	 
 		
-		/* 
+		
 		//(2)
+		/*
 	 	OutputStreamWriter osw = new OutputStreamWriter(System.out); //(1)
 		BufferedWriter bw = new BufferedWriter(osw);					
 		while ( (aux = br.readLine()) != null){						
 			osw.write(aux);												
 			osw.flush();												
 		}															
-		*/
+		 */
+		
 		
 		
 		/*

@@ -22,7 +22,9 @@ public class IOStreamDemo {
     System.out.println(stdin.readLine());
  
 
+
     // 2. Input from memory
+    System.out.println("Esecuzione 2");
     StringReader in2 = new StringReader(s2);
     int c;
     while((c = in2.read()) != -1)
@@ -30,6 +32,7 @@ public class IOStreamDemo {
  
 
     // 3. Formatted memory input
+    System.out.println("Esecuzione 3");
     try {
       DataInputStream in3 = new DataInputStream(
         new ByteArrayInputStream(s2.getBytes()));
@@ -40,6 +43,7 @@ public class IOStreamDemo {
     }
 
     // 4. File output
+    System.out.println("Esecuzione 4");
     try {
       BufferedReader in4 = new BufferedReader(
         new StringReader(s2));
@@ -54,7 +58,10 @@ public class IOStreamDemo {
       System.err.println("End of stream");
     }
     
+    
+    
     // 5. Storing & recovering data
+    System.out.println("Esecuzione 5");
     try {
       DataOutputStream out2 = new DataOutputStream(
         new BufferedOutputStream(
@@ -80,6 +87,7 @@ public class IOStreamDemo {
     }
 
     // 6. Reading/writing random access files
+    System.out.println("Esecuzione 6");
     RandomAccessFile rf = new RandomAccessFile("src/lezione13/rtest.dat", "rw");
     for(int i = 0; i < 10; i++)
       rf.writeDouble(i*1.414);

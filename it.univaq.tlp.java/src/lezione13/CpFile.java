@@ -8,7 +8,7 @@ public class CpFile {
 	
 		int aux;
 		
-		if (args.length == 0){
+		if (args.length !=2){
 			System.err.println("Usage: CpFile <inFile> <outFile>\n");
 			System.exit(1);
 		}		
