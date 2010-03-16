@@ -1,6 +1,6 @@
 package lezione1;
 
-public class Cerchio extends Shape {
+public class Circle extends Shape {
 
 	public void draw2(){
 		

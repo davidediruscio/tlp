@@ -12,13 +12,13 @@ public class Polimorfismo {
 		int x=4;
 		Shape s = null;
 		if (x<=3) {
-			s = new Cerchio();
+			s = new Circle();
 		} else {	
 			s = new Triangle();
 		}
 		// La riga seguente provoca un errore
 		// a run-time
-		//((Cerchio) s).draw();
+		//((Circle) s).draw();
 		s.draw();
 	}
 
