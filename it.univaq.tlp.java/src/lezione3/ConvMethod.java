@@ -1,6 +1,6 @@
 package lezione3;
 
-class Test {
+class ConvMethod {
 	static int m(byte a, byte b) { return a+b; }
 	static int m(short a, short b) { return a-b; }
 	static long m(long a, long b) { return a-b; }
