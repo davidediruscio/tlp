@@ -10,6 +10,5 @@ class Test {
 		int j=2;
 		System.out.println(m(i, j));
 		//short s3 = 0x1ffff; 
-	
 	}
 }
