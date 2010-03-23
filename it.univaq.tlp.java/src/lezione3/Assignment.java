@@ -8,7 +8,7 @@ class Number {
 //Aliasing
 
 public class Assignment {
-  static ConvMethod monitor = new ConvMethod();
+ 
   public static void main(String[] args) {
     Number n1 = new Number();
     Number n2 = new Number();
