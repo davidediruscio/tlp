@@ -3,8 +3,10 @@ package lezione3;
 public class SampleError {
 
 	public static void main(String[] args){
-		boolean x=true;
-		boolean y=false;
+		boolean x=false;
+		boolean y=true;
+		//int x=4;
+		//int y=5;
 		
 		while (x=y){
 			System.out.println("valore di x "+x);
