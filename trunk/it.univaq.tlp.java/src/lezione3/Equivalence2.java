@@ -1,7 +1,10 @@
 package lezione3;
 
+
+
 public class Equivalence2 {
 
+	
 	/**
 	 * @param args
 	 */
