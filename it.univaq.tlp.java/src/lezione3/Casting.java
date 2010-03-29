@@ -15,9 +15,11 @@ class ColoredPoint extends Point {
 public class Casting {
 	public static void main(String[] args) {
 		Point p = new Point();
+		//Point p2 = new ColoredPoint();
 		ColoredPoint cp = new ColoredPoint();
 		cp = (ColoredPoint)p; 		//Errore a run-time
-		//Long l = (Long)p; 			//Errore in compilazione
+		//cp = (ColoredPoint)p2;		//OK
+		//Long l = (Long)p; 		//Errore in compilazione
 		//int i = (int) p; 			//Errore in compilazione
 		
 	}
