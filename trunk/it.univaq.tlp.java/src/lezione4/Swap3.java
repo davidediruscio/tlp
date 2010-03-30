@@ -1,5 +1,7 @@
 package lezione4;
 
+ 
+
 public class Swap3 {
 
 	/**
@@ -8,6 +10,11 @@ public class Swap3 {
 	public static void main(String[] args) {
 		Point p1 = new Point(100,200);
 		Point p2 = new Point(300,400);
+		
+		Integer i = new Integer(50);
+		
+		System.out.println("Valore di i " + i);
+		
 		System.out.println("p1=" + p1);
 		System.out.println("p2=" + p2);
 		System.out.println("p1.x " + p1.x + " p1.y " + p1.y);
