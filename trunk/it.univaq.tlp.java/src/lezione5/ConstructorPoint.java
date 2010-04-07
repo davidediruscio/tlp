@@ -24,7 +24,7 @@ class Point {
 
 class ColoredPoint extends Point {
 	   int color = 0xFF00FF;
-
+	   
 }
 
 	

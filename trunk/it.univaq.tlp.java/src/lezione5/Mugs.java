@@ -25,5 +25,6 @@ public class Mugs {
   public static void main(String[] args) {
     System.out.println("Inside main()");
     Mugs x = new Mugs();
+    Mugs y = new Mugs();
   }
 } ///:~
