@@ -32,7 +32,9 @@ public class ExplicitStatic {
  
   public static void main(String[] args) {
     System.out.println("Inside main()");
-    //Cups.c1.f(99);  // (1)
+    Cups.c1.f(99);  // (1)
+    //Cups.c1.f(98);  // (1)
+    
    
   }
   // static Cups x = new Cups();  // (2)

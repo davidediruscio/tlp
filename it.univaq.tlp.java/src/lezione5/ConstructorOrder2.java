@@ -20,7 +20,7 @@ class B2 extends A2 {
 */	
 	public B2(int i) {
 		//super();
-		this('c');
+		//this('c');
 		System.out.println("Sono il costruttore di B2(int)");
 	}
 	

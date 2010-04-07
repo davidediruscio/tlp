@@ -3,7 +3,7 @@ package lezione5;
 class A3 {
 	
 	public A3(int i) {
-		System.out.println("Sono il costruttore di A3");
+		System.out.println("Sono il costruttore di A3 invocato con il valore " + i);
 	}
 }
 
@@ -15,7 +15,7 @@ class B3 extends A3 {
 	}
 	
 	public B3() {
-		super(5);
+		super(6);
 		System.out.println("Sono il costruttore di B3");
 	}
 	
