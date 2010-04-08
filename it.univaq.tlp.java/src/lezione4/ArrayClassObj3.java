@@ -9,6 +9,12 @@ class Point {
 		x=i;
 		y=j;
 	}
+	
+	/*
+	public String toString() {
+		return "Stampa dell'oggetto Point con valore x="+x+"e y="+y;
+	}
+	*/
 }
 
 public class ArrayClassObj3 {
@@ -20,7 +26,10 @@ public class ArrayClassObj3 {
 		Point[] points;
 		points  = new Point[3];
 		
+		points[0] = new Point(4,5);
+		
 		System.out.println(points[0]);
+		
 
 	}
 
