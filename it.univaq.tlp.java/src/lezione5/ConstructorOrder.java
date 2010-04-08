@@ -1,7 +1,17 @@
 package lezione5;
 
-class A {
-	
+class C {
+
+	public C() {
+		
+	}
+	public C(int i) {
+		System.out.println("Sono il costruttore di C con parametro " + i);
+		
+	}
+}
+
+class A extends C {
 	
 	public A() {
 		System.out.println("Sono il costruttore di A");

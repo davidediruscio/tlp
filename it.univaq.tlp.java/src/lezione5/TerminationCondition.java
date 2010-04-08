@@ -44,7 +44,8 @@ public class TerminationCondition {
     new Book2(true);
     // novel = null;
     // Force garbage collection & finalization:
-    System.gc();				// In questo modo mi accorgo se c'e' qualche libro non acquisito
+    System.gc();				// In questo modo mi accorgo se c'e' qualche 
+    							// libro non acquisito
   }
 
 } 
