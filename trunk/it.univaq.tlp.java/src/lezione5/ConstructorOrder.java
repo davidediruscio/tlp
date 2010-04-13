@@ -3,6 +3,7 @@ package lezione5;
 class C {
 
 	public C() {
+		System.out.println("Sono il costruttore di default di C");
 		
 	}
 	public C(int i) {
@@ -27,7 +28,7 @@ class B extends A {
 	
 	
 	public B(int i) {
-		this();
+		//this();
 		System.out.println("Sono il costruttore di B(int)");
 	}
 }
