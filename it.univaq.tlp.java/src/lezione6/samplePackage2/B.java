@@ -1,5 +1,7 @@
 package lezione6.samplePackage2;
 
+import lezione6.samplePackage1.*;
+
  class B {
 	 int x; 
 	/**
@@ -7,7 +9,7 @@ package lezione6.samplePackage2;
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		//A a = new A();
 
 	}
 }

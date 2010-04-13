@@ -1,5 +1,7 @@
 package lezione5;
 
+
+
 class Book {
 	  boolean checkedOut = false;
 	 
@@ -41,8 +43,8 @@ public class TerminationCondition {
     // novel.checkIn();
     // Drop the reference, forget to clean up:
     new Book(true);
-    new Book2(true);
-    // novel = null;
+    //new Book2(true);
+     novel = null;
     // Force garbage collection & finalization:
     System.gc();				// In questo modo mi accorgo se c'e' qualche 
     							// libro non acquisito
