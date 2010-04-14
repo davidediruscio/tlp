@@ -4,12 +4,18 @@ package lezione5;
 class A1 {
 	
 	int x=200;
-	//A1 a1 = new A1();
+	static int y;
+	//A1 a1 = new A1();		// Questo da errore
 	
-	{
-		System.out.println("Valore di x "+x);
+	{						// Blocco di inizializzatore di istanza
+		System.out.println("Valore di x nel blocco di inizializzazione "+x);
 		x=300;
 		
+	}
+	
+	static {				// Il blocco di inizializzatore statico viene eseguito prima di quello di istanza
+		y=10;
+		System.out.println("Valore di y " + y);
 	}
 	
 	A1(){
