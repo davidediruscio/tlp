@@ -1,9 +1,5 @@
 package lezione7;
 
-//: c06:FinalArguments.java
-// Using "final" with method arguments.
-// From 'Thinking in Java, 3rd ed.' (c) Bruce Eckel 2002
-// www.BruceEckel.com. See copyright notice in CopyRight.txt.
 
 class Gizmo {
 
@@ -18,9 +14,13 @@ public class FinalArguments {
     g = new Gizmo(); // OK -- g not final
 
   }
-  // void f(final int i) { i++; } // Can't change
+  //void f(final int i) { i++; } // Can't change
+  
   // You can only read from a final primitive:
-  int g(final int i) { return i + 1; }
+  int g(final int i) { 
+	  return i + 1; 
+  }
+  
   public static void main(String[] args) {
     FinalArguments bf = new FinalArguments();
     bf.without(null);
