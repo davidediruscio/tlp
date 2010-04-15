@@ -1,9 +1,6 @@
 package lezione7;
 
-//: c06:Jurassic.java
-// Making an entire class final.
-// From 'Thinking in Java, 3rd ed.' (c) Bruce Eckel 2002
-// www.BruceEckel.com. See copyright notice in CopyRight.txt.
+
 
 class SmallBrain {}
 
