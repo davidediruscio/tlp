@@ -7,7 +7,7 @@ import java.io.IOException;
 
 class A1 {
 	
-	int x=200;
+	int x = 200;
 	static int y;
 	//A1 a1 = new A1();		// Questo da errore a run-time
 	
@@ -24,7 +24,7 @@ class A1 {
 		
 	}
 	
-	static {				// Il blocco di inizializzatore statico viene eseguito prima di quello di istanza
+	static {	// Il blocco di inizializzatore statico viene eseguito prima di quello di istanza
 		y=10;
 		System.out.println("Valore di y " + y);
 	}
