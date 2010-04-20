@@ -7,7 +7,11 @@ public class Cookie {
 	   System.out.println("Cookie constructor");
 	   a = new A();
 	  }
-	   void bite() { System.out.println("bite"); }
-	   //public void bite() { System.out.println("bite"); }
-	   //protected void bite() { System.out.println("bite"); }
-	} ///:~
+	 // void bite() { System.out.println("bite"); }
+	  // public void bite() { System.out.println("bite"); }
+	  // protected void bite() { System.out.println("bite"); }
+	  protected static void bite2() {}	
+
+} 
+
+///:~

@@ -8,16 +8,16 @@ class Sundae {
 	  }
 	  public void setJ(int i){
 		  System.out.println("setJ("+i+")");
-		  j=i;
+		  this.j=i;
 	  }
 	}
 
 public class IceCream {
 	  public static void main(String[] args) {
-	    //! Sundae x = new Sundae();
+	    //Sundae x = new Sundae();
 	    Sundae x = Sundae.makeASundae();
 	    x.setJ(5);
-	    //! x.j=5; illegal
+	    //x.j=5; //illegal
   }
 } 
 	

@@ -16,6 +16,7 @@ class Soup {
 		  System.out.println("access() di Soup");
 	    return ps1;
 	  }
+	  
 	  public void f() {
 		  System.out.println(this);
 		  
@@ -33,7 +34,7 @@ class Sandwich { // Uses Lunch
 public class Lunch {
   void test() {
     // Can't do this! Private constructor:
-    //! Soup priv1 = new Soup();
+    //!  Soup priv1 = new Soup();
 	  
     Soup priv2 = Soup.makeSoup();
     System.out.println("Stampo priv2.f()");
@@ -53,6 +54,9 @@ public class Lunch {
     
     System.out.println("Stampo priv3.access().f()");
     priv3.access().f();
+    
+    System.out.println("Stampo priv3.access().access().access().f()");
+    priv3.access().access().access().f();
     
   }
   
