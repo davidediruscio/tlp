@@ -35,6 +35,10 @@ class OverridingPrivate2 extends OverridingPrivate {
   public void g() {
     System.out.println("OverridingPrivate2.g()");
   }
+  
+  public void h(){
+	  System.out.println("OverridingPrivate2.h()");
+  }
 }
 
 public class FinalOverridingIllusion {
@@ -46,7 +50,7 @@ public class FinalOverridingIllusion {
     // You can upcast:
     OverridingPrivate op = op2;
     // But you can't call the methods:
-    //! op.f();
+    // op.f();
     //! op.g();
     // Same here:
     WithFinals wf = op2;
