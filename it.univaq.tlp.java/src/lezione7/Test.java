@@ -6,7 +6,7 @@ class Test {
 	      Point p1 = new Point(100,100);
 	      Point p2 = new Point(200,200,p1);
 
-	      //! p1.root = new Point(300,300); //ERRORE
+	      // p1.root = new Point(300,300); //ERRORE
 	      p2.root.x = 300;              //OK
 	      System.out.println("ORIGIN.x:" + Point.ORIGIN.x);
 
