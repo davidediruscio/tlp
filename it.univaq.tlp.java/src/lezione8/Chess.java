@@ -5,11 +5,13 @@ class Game {
   Game(int i) {
     System.out.println("Game constructor");
   }
+
 }
+
 
 class BoardGame extends Game {
   BoardGame(int i) {
-    super(i);
+    super(5);
     System.out.println("BoardGame constructor");
   }
 }
