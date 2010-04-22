@@ -1,18 +1,18 @@
 package esercizi.connection;
 
 
-public class ConnectionManager {
+public class ConnectionManager2 {
 
 	
 	private static int availableConnections = 3;
-	private static ConnectionManager instance = new ConnectionManager();
-	private static Connection[] connections ;
+	private static ConnectionManager2 instance = new ConnectionManager2();
+	private static Connection[] connections = null;
 
-	private ConnectionManager(){
+	private ConnectionManager2(){
 		connections =new Connection[]{new Connection("Conn1"), new Connection("Conn2"), new Connection("Conn3")};
 	}
 	
-	public static ConnectionManager getInstance(){
+	public static ConnectionManager2 getInstance(){
 		return instance;
 	}
 	
