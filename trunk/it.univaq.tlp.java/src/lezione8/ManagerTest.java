@@ -17,14 +17,19 @@ public class ManagerTest {
 	      staff[1] = new Employee("Harry Hacker", 50000, 1989, 10, 1);
 	      staff[2] = new Employee("Tommy Tester", 40000, 1990, 3, 15);
 
+	      
 	      // print out information about all Employee objects
 	      for (int i = 0; i < staff.length; i++) {
 			System.out.println("name " + staff[i].getName() + ", salary=" + staff[i].getSalary());
 	      }
 	      
+	      
+	      System.out.println(staff[0].getSalary());
 	      boss.setBonus(5000);         	//OK
 	      // staff[0].setBonus(5000);   	//ERRORE
-	      // Manager m = staff[ 2 ]; 		//ERRORE    
+	      // Manager m = staff[2]; 		//ERRORE    
+	      System.out.println(staff[0].getSalary());
+	  
 	      
 	   }
 }

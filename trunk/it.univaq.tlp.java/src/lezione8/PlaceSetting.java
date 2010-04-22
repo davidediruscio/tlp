@@ -48,7 +48,7 @@ class Knife extends Utensil {
 
 // A cultural way of doing something:
 class Custom {
-  Custom(int i) {
+   Custom(int i) {
     System.out.println("Custom constructor");
   }
 }
