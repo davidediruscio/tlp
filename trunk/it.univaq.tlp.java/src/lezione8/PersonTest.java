@@ -14,6 +14,11 @@ abstract class Person {
 	   public String getName() {  
 	      return name;
 	   }
+	   
+	   public String myMethod(){
+		   return "myMethod() di Person";
+	   };
+	   
 	}
 
 class Employee3 extends Person {  
@@ -40,6 +45,10 @@ class Employee3 extends Person {
 	      double raise = salary * byPercent / 100;
 	      salary += raise;
 	   }
+	   
+	   public String myMethod() {
+		   return "myMethod in Employee3";
+	   }
 
 	}
 
@@ -53,17 +62,29 @@ class Student extends Person {
 	   public String getDescription() {  
 	      return "a student majoring in " + major;
 	   }
+	   public String myMethod() {
+		   return "myMethod in Student";
+	   }
 	}
 
 public class PersonTest {  
    public static void main(String[] args) {  
       Person[] people = new Person[2];
-
-      people[0] = new Employee3("Harry Hacker", 50000, 1989, 10, 1);
+      Employee3 employee = new Employee3("Harry Hacker", 50000, 1989, 10, 1);
+      people[0] = employee; 
       people[1] = new Student("Maria Morris", "computer science");
 
-      for (int i=0; i<people.length; i++)
+      for (int i=0; i<people.length; i++){
+ /*   	  if (people[i] instanceof Employee3) {
+    		  System.out.println(((Employee3)people[i]).myMethod() + ", " + people[i].getDescription());     	  
+    	  } else {
+    		  System.out.println(((Student)people[i]).myMethod() + ", " + people[i].getDescription());     	  
+    	  }
+ */
+    	 // System.out.println(people[i].myMethod() + ", " + people[i].getDescription());    	  
     	  System.out.println(people[i].getName() + ", " + people[i].getDescription());
+        //  System.out.println(people[i].myMethod() + ", " + people[i].myMethod());
+      }
 
    }
 }

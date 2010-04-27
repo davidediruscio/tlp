@@ -1,7 +1,7 @@
 package lezione8;
 
 class Point3 {
-	int x = 0, y = 0;
+   int x = 0, y = 0;
    void move(int dx,int dy) {
 		x += dx;
 		y += dy;
@@ -24,12 +24,12 @@ public class SlowPoint extends Point3 {
                   limit(dy,yLimit) );
    }
 
-	//!void m2(){}		//Errore perchè Un metodo di istanza non può effettuare 
+	// void m2(){}		//Errore perchè Un metodo di istanza non può effettuare 
 						//l’override di metodi statici	
 
-	//!private void m3() {} //m3() di Point3 e' public e deve rimanere tale
+	// private void m3() {} //m3() di Point3 e' public e deve rimanere tale
 	
-	//!private void m4() {} //m4() può essere protected o public
+	// private void m4() {} //m4() può essere protected o public
 	
 	//!private void m5() {} //m5() di Point3 è di package e pertanto non può essere 
 							//private in SlowPoint
@@ -38,5 +38,4 @@ public class SlowPoint extends Point3 {
 		return (d > limit) ? limit : ( (d < - limit) ? limit : d ); 	
 	}
 
-	
 }
