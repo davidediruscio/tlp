@@ -27,9 +27,11 @@ public class RealPoint extends Point2 {
 	  float getMyX() {
 		  return x;
 	  }
+	 // int getX() { return x; }		Errore sul tipo di ritorno
+	 // int getY() { return y; }		Errore sul tipo di ritorno
 	  
-	 //!float getMyX() { return x; }             //ERRORE
-	 //! float getY() { return y; }             //ERRORE
+	 //!float getMyX() { return x; }    //ERRORE
+	 //!float getY() { return y; }      //ERRORE
 
 }
 
