@@ -40,7 +40,8 @@ class Triangle extends Shape {
 }
 
 /*
- *  "Fabbrica" che produce un riferimento ad un oggetto Shape di forma geometrica casuale ogni
+ *  "Fabbrica" che produce un riferimento ad un oggetto Shape 
+ *  di forma geometrica casuale ogni
  *  volta che viene invocato il suo metofo next()
  */
 

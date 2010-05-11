@@ -2,7 +2,7 @@ package lezione9;
 
 
 abstract class Glyph {
-
+  //public int radius = 4; //(1)
   abstract void draw();
   Glyph() {
     System.out.println("Glyph() before draw()");
@@ -12,7 +12,7 @@ abstract class Glyph {
 }
 
 class RoundGlyph extends Glyph {
-  private int radius = 1;
+  public int radius = 1;
   RoundGlyph(int r) {
     radius = r;
     System.out.println(
@@ -20,7 +20,8 @@ class RoundGlyph extends Glyph {
   }
   void draw() {
     System.out.println(
-      "RoundGlyph.draw(), radius = " + radius);
+    		"RoundGlyph.draw(), radius = " + radius);
+  //   "RoundGlyph.draw(), radius = " + super.radius); //(1)
   }
 }
 
