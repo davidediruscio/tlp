@@ -73,6 +73,9 @@ public class Music5 {
     };
     tuneAll(orchestra);
     System.out.println(Wind.I);
+    System.out.println(Percussion.I);
+    System.out.println(Instrument.I);
+    // Instrument.I++; Errore perche I e' final
     
   }
 } ///:~
