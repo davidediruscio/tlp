@@ -4,6 +4,7 @@ class A {
   int method(A a) {
     return 1;
   }
+
 }
 
 class B  extends A  {
@@ -11,8 +12,9 @@ class B  extends A  {
     return 3;
   }
   int method(B  a) {
-    return 4;
+	return 4;
   }
+  //int method2(B b){return 80;}
 }
 
 	
@@ -35,6 +37,7 @@ public class MethodSelection2 {
 		System.out.println("a2.method(a3) vale " + a2.method(a3));
 		System.out.println("a3.method(a1) vale " + a3.method(a1));
 		System.out.println("a3.method(a2) vale " + a3.method(a2));
+		//System.out.println("a3.method(a2) vale " + a3.method2(a2));
 		System.out.println("a3.method(a3) vale " + a3.method(a3));
 		
 	}
