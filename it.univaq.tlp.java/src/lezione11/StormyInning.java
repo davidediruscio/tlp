@@ -33,7 +33,7 @@ interface Storm {
 public class StormyInning extends Inning implements Storm {
   // OK to add new exceptions for constructors, but you
   // must deal with the base constructor exceptions:
-  public StormyInning() 
+  public StormyInning()
     throws RainedOut, BaseballException {}			//Per esempio se viene cancellato BaseballException c'e'
   													//un errore di compilazione
 
@@ -41,7 +41,7 @@ public class StormyInning extends Inning implements Storm {
     throws Foul, BaseballException {}
 
   // Regular methods must conform to base class:
-  //! void walk() throws PopFoul {} //Compile error
+  // void walk() throws PopFoul {} //Compile error
 
  
   // If the method doesn't already exist in the
@@ -50,7 +50,9 @@ public class StormyInning extends Inning implements Storm {
 
   // You can choose to not throw any exceptions,
   // even if the base version does:
-  public void event() {}
+  public void event()  {
+
+  }
 
   // Overridden methods can throw inherited exceptions:
   public void atBat() throws PopFoul {

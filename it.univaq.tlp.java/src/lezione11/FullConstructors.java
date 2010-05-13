@@ -19,7 +19,8 @@ public class FullConstructors {
     try {
       f();
     } catch(MyException e) {
-      e.printStackTrace();
+      //System.out.println("Catturata eccezione sollevata da f()");
+    	e.printStackTrace();
     }
     try {
       g();

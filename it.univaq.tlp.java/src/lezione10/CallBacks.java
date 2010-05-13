@@ -58,6 +58,8 @@ public class CallBacks {
 		Agenda agenda = new Agenda();
 		A a1 = new A(agenda);
 		A a2 = new A(agenda);
+		A a3 = new A(agenda);
+		A a4 = new A(agenda);
 		
 		Appointment app1 = new Appointment();
 		app1.info = "Appuntamento 1";
