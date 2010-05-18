@@ -2,8 +2,8 @@ package lezione11;
 
 
 class BaseballException extends Exception {}
-class Foul extends BaseballException {}
-class Strike extends BaseballException {}
+class FoulException extends BaseballException {}
+class StrikeException extends BaseballException {}
 
 abstract class Inning {
   public Inning() throws BaseballException {}
@@ -15,31 +15,31 @@ abstract class Inning {
 	// nelle sottoclasse
   }
   
-  public abstract void atBat() throws Strike, Foul;
+  public abstract void atBat() throws StrikeException, FoulException;
 
   public void walk() {} // Throws no checked exceptions
 
 }
 
 class StormException extends Exception {}
-class RainedOut extends StormException {}
-class PopFoul extends Foul { }
+class RainedOutException extends StormException {}
+class PopFoulException extends FoulException { }
 
 
 interface Storm {
-  public void event() throws RainedOut;
-  public void rainHard() throws RainedOut;
+  public void event() throws RainedOutException;
+  public void rainHard() throws RainedOutException;
 }
 
 public class StormyInning extends Inning implements Storm {
   // OK to add new exceptions for constructors, but you
   // must deal with the base constructor exceptions:
   public StormyInning()
-    throws RainedOut, BaseballException {}			//Per esempio se viene cancellato BaseballException c'e'
+    throws RainedOutException, BaseballException {}			//Per esempio se viene cancellato BaseballException c'e'
   													//un errore di compilazione
 
   public StormyInning(String s) 
-    throws Foul, BaseballException {}
+    throws FoulException, BaseballException {}
 
   // Regular methods must conform to base class:
   // void walk() throws PopFoul {} //Compile error
@@ -47,17 +47,19 @@ public class StormyInning extends Inning implements Storm {
  
   // If the method doesn't already exist in the
   // base class, the exception is OK:
-  public void rainHard() throws RainedOut {}
-
+  public void rainHard() throws RainedOutException {}
+  
+  
+  
   // You can choose to not throw any exceptions,
   // even if the base version does:
-  public void event()  {
-
+  public void event() {//throws RainedOutException,BaseballException  {
+	    //throw new RainedOutException();
   }
 
   // Overridden methods can throw inherited exceptions:
-  public void atBat() throws PopFoul {
-	  throw new PopFoul();
+  public void atBat() throws PopFoulException {
+	  throw new PopFoulException();
   }
   
   
@@ -65,9 +67,9 @@ public class StormyInning extends Inning implements Storm {
     try {
       StormyInning si = new StormyInning();
       si.atBat();
-    } catch(PopFoul e) {
+    } catch(PopFoulException e) {
       System.err.println("Pop foul");
-    } catch(RainedOut e) {
+    } catch(RainedOutException e) {
       System.err.println("Rained out");
     } catch(BaseballException e) {
       System.err.println("Generic baseball exception");
@@ -81,15 +83,36 @@ public class StormyInning extends Inning implements Storm {
  
       // You must catch the exceptions from the
       // base-class version of the method:
-    } catch(Strike e) {
+    } catch(StrikeException e) {
       System.err.println("Strike");
-    } catch(Foul e) {
+    } catch(FoulException e) {
       System.err.println("Foul");
-    } catch(RainedOut e) {
+    } catch(RainedOutException e) {
       System.err.println("Rained out");
     } catch(BaseballException e) {
       System.err.println("Generic baseball exception");
     }
     
+    try {
+    	Inning si = new StormyInning();
+    	si.event();
+    	
+    } catch (BaseballException e){
+    	System.err.println("StormyInning");
+    } catch (RainedOutException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+    
+    try {
+    	Storm si = new StormyInning();
+    	si.event();
+    	
+    } catch (BaseballException e){
+    	System.err.println("StormyInning");
+    } catch (RainedOutException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
   }
 } 
