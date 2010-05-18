@@ -19,6 +19,7 @@ public class TestThrowsKeyword {
          catch ( IOException e ) {
              System.out.println("Errore nel file!");
          }
+         
     }
     private static void readFile( String filename ) throws FileNotFoundException, IOException {
     	
