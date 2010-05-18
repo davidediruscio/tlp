@@ -9,9 +9,10 @@ abstract class Inning {
   public Inning() throws BaseballException {}
 
   public void event() throws BaseballException {
-    // In realtà non viene sollevata nessuna eccezione pero' in questo modo si costringe
-	// il programmatore ad intercettare tutte le eccezioni che possono essere aggiunte nelle versioni
-	// di event() sovrapposte nelle sottoclasse
+    // In realtà non viene sollevata nessuna eccezione pero' in questo modo 
+	// si costringe il programmatore ad intercettare tutte le eccezioni 
+	// che possono essere aggiunte nelle versioni di event() sovrapposte 
+	// nelle sottoclasse
   }
   
   public abstract void atBat() throws Strike, Foul;
