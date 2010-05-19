@@ -11,15 +11,11 @@ public class TestStackOverflow {
     	//	System.out.println("sono in StackOverflowError");
     	//}
     	
-    	//System.out.println("Sono dopo try");
-        
+    	//System.out.println("Sono dopo try");   
     }
     
     public static void funzioneRicorsiva() throws StackOverflowError {
-         System.out.println("Invocazione metodo numero: " + numeroChiamata++);
-    
+         System.out.println("Invocazione metodo numero: " + numeroChiamata++);    
         	 funzioneRicorsiva();
-       
-    
     }
 }
