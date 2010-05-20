@@ -5,8 +5,8 @@ public class OnOffSwitch {
   
   public static void f() throws OnOffException1,OnOffException2 {
 	  
-	 // throw new OnOffException1();
-	  throw new RuntimeException();
+	  throw new OnOffException1();
+	 // throw new RuntimeException();
 	  
   }
   

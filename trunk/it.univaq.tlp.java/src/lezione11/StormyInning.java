@@ -6,7 +6,9 @@ class FoulException extends BaseballException {}
 class StrikeException extends BaseballException {}
 
 abstract class Inning {
-  public Inning() throws BaseballException {}
+  public Inning() throws BaseballException {
+	  System.out.println("Sono nel costruttore di Inning");  
+  }
 
   public void event() throws BaseballException {
     // In realtà non viene sollevata nessuna eccezione pero' in questo modo 
