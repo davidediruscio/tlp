@@ -19,6 +19,7 @@ public class Rethrowing {
   public static void main(String[] args) throws Throwable {
     try {
       g();
+      System.out.println("Sono dopo g()");
     } catch(Exception e) {
       System.err.println(
         "Caught in main, e.printStackTrace()");
