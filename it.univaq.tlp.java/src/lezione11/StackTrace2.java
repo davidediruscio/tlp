@@ -22,6 +22,7 @@ class StackTrace2{
         }
         catch ( Exception e ) {
             throw new MyException3( "Errore", e );
+        	//throw new MyException3( "Errore");
         }
     }
 }

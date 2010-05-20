@@ -39,7 +39,8 @@ public class TestMyException3 {
         }
         catch ( FileNotFoundException e ) {
           System.out.println( "File Not Found!" );
-          throw new MyException3( "MyException3", e );
+          throw new MyException3( "MyException3", e ); 
+          //throw new MyException3( "MyException3"); //(1)
         }
         catch ( IOException e ) {
             System.out.println( "Errore nel file!" );
@@ -70,7 +71,9 @@ public class TestMyException3 {
         
         
         catch ( MyException3 e ) {
-            System.out.println( "MyException3!" );
+            System.out.println( "MyException3! " + e.getCause() ); 
+        	//System.out.println( "MyException3! " );	//(1)
         }
+        
     }
 }
