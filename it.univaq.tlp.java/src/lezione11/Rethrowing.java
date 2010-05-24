@@ -1,13 +1,16 @@
 package lezione11;
 
+import java.io.FileNotFoundException;
+
+
  
 public class Rethrowing {
  
-  public static void f() throws Exception {
+  public static void f() throws FileNotFoundException {
     System.out.println("originating the exception in f()");
-    throw new Exception("thrown from f()");
+    throw new FileNotFoundException("thrown from f()");
   }
-  public static void g() throws Throwable {
+  public static void g() throws Exception {
     try {
       f();
     } catch(Exception e) {
@@ -16,8 +19,8 @@ public class Rethrowing {
       throw e;
     }
   }
-  public static void main(String[] args) throws Throwable {
-    try {
+  public static void main(String[] args)  {
+	try {
       g();
       System.out.println("Sono dopo g()");
     } catch(Exception e) {
@@ -25,6 +28,6 @@ public class Rethrowing {
         "Caught in main, e.printStackTrace()");
       e.printStackTrace();
     }
-   
+  
   }
 }  
