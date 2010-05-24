@@ -9,4 +9,7 @@ public class Cat {
   public void id() {
     System.out.println("Cat #" + catNumber);
   }
+  public String toString() {
+	    return "This is Cat #" + catNumber;
+  }
 } ///:~
