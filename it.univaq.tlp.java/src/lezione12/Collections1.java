@@ -16,7 +16,7 @@ public class Collections1 {
             String element = ( String ) array[ i ];
             System.out.println( "Elemento di array:" + element );
         }
-        //!String[] array1 = ( String[] ) c.toArray();  //ClassCastException
+        String[] array1 = ( String[] ) c.toArray();  //ClassCastException
         String[] str = ( String[] ) c.toArray( new String[ 0 ] );
         for ( int i = 0; i < str.length; i++ ) {
              String element = str[ i ];

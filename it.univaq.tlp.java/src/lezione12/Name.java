@@ -34,7 +34,9 @@ public class Name implements Comparable {
 	public int compareTo(Object o) {
 	    Name n = (Name)o;
 	    int lastCmp = lastName.compareTo(n.lastName);
-	    return (lastCmp!=0 ? lastCmp : firstName.compareTo(n.firstName));
+	    return (lastCmp!=0 ? lastCmp : firstName.compareTo(n.firstName));	//  0: gli elementi sono uguali
+																			// -1: quello preso in ingresso va prima
+																			//  1: quello preso in ingresso va dopo
 	}
 
 
