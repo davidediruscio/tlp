@@ -24,7 +24,6 @@ public class SortedSetDemo {
     System.out.println(high);
     System.out.println(sortedSet.subSet(low, high));
     System.out.println(sortedSet.headSet(high));
-    System.out.println(sortedSet.tailSet(low));
-    
+    System.out.println(sortedSet.tailSet(low));  
   }
-} ///:~
+} 
