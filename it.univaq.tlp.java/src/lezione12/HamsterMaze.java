@@ -15,6 +15,8 @@ public class HamsterMaze {
 	    
 	    Printer.printAll(list.iterator()); 
 	    Printer.printAll(cats.iterator());
+	  //  Printer.printAll(list);
+	  //  Printer.printAll(cats);
 	    
 	}
 } ///:~

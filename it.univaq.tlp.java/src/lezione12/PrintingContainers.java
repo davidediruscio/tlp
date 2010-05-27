@@ -4,10 +4,10 @@ import java.util.*;
 
 public class PrintingContainers {
 
-	static Collection fill(Collection c) {
-    c.add("dog");
-    c.add("dog");
-    c.add("cat");
+  static Collection fill(Collection c) {
+	System.out.println("Aggiunto dog ?" + c.add("dog"));
+    System.out.println("Aggiunto dog ?" + c.add("dog"));
+    System.out.println("Aggiunto cat ?" +c.add("cat"));
     return c;
   }
   static Map fill(Map m) {
