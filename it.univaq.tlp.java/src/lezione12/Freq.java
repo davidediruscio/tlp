@@ -1,6 +1,7 @@
 package lezione12;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
@@ -12,13 +13,16 @@ public class Freq {
 	//1 1 2 tre tre prova 3 prova prova
 	public static void main(String args[]) { 
 		Map m = new HashMap(); 
+		Map m3 = new HashMap(); 
 		// Initialize frequency table from command line 
 		for (int i=0; i<args.length; i++) { 
 			Integer freq = (Integer) m.get(args[i]);
 			m.put(args[i],  (freq==null ? ONE : new Integer(freq.intValue() + 1))); 
+			m3.put(args[i],  (freq==null ? ONE : new Integer(freq.intValue() + 1))); 
 		} 
 		System.out.println(m.size()+" distinct words detected:"); 
 		System.out.println(m); 
+		System.out.println(m3);
 		
 		
 		
@@ -29,7 +33,7 @@ public class Freq {
 	   
 		System.out.println("------------------------");
 		System.out.println("values():");
-		for (Iterator i=m.values().iterator(); i.hasNext(); ) {
+		for (Iterator i=(m.values()).iterator(); i.hasNext(); ) {
 		     System.out.println(i.next());}
 		
 		System.out.println("------------------------");
@@ -46,12 +50,14 @@ public class Freq {
 		m2.put("1",2);
 		//m2.put("4", 5);
 
-
-		
+	 	
 		//m2 sotto-mappa di m1
 		if (m.entrySet().containsAll(m2.entrySet())) { 
 		    System.out.println("YES");
 		} 
+		
+		System.out.println("m uguale ad m3: " + m.equals(m3));
+
 
 
 	} 

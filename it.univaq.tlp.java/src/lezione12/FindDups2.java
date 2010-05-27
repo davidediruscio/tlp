@@ -10,6 +10,20 @@ public class FindDups2 {
 		for (int i=0; i<args.length; i++) 
 			if (!uniques.add(args[i])) 
 		                    dups.add(args[i]); 
+		
+		Iterator it = uniques.iterator();
+		System.out.println("Stampa del Set uniques");
+		while (it.hasNext()) {
+			System.out.print(" " + it.next());
+		}
+		System.out.println("");
+		it = dups.iterator();
+		System.out.println("Stampa del Set dips");
+		while (it.hasNext()) {
+			System.out.print(" " + it.next());
+		}
+		System.out.println("");
+		
 		uniques.removeAll(dups); 
 		
 		// Destructive set-difference 

@@ -29,6 +29,7 @@ public class StackL {
   }
   
   
+  
   public static void main(String[] args) {
     StackL stack = new StackL();
     for(int i = 0; i < 10; i++)

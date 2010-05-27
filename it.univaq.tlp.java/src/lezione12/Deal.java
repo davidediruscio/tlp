@@ -9,8 +9,8 @@ public class Deal {
 	public static List dealHand(List deck, int n) {
         int deckSize = deck.size();
         
-        System.out.println("Size di list: " + deckSize);   
-        System.out.println("Value of n: " + n);
+        //System.out.println("Size di list: " + deckSize);   
+        //System.out.println("Value of n: " + n);
         
         List handView = deck.subList(deckSize-n, deckSize);
         
