@@ -28,14 +28,16 @@ public class TestStatement {
                 System.out.println( "-----------------------------------" );
               }
            
+          String stringParam = new String("prova_descrizione2");
         
-          SQL ="INSERT INTO javalibrary.title " + "VALUES (NULL , 'titolo_prova', 1, 'prova_descrizione2', 'prova_autore2', 'prova_isbn2')";
+          SQL ="INSERT INTO javalibrary.title " + 
+          	   "VALUES (NULL , 'titolo_prova', 1, '" + stringParam + "' , 'prova_autore2', 'prova_isbn2')";
         
-          //connection.createStatement();
-          //statement.executeUpdate(SQL);
+       
+          statement.executeUpdate(SQL);
            
-           SQL = "DELETE FROM javalibrary.title WHERE name = 'titolo_prova'";
-           statement.executeUpdate(SQL);
+        //   SQL = "DELETE FROM javalibrary.title WHERE name = 'titolo_prova'";
+        //   statement.executeUpdate(SQL);
            
            
          //  SQL = "UPDATE javalibrary.title SET name =  'newName' WHERE name = 'name2'";
