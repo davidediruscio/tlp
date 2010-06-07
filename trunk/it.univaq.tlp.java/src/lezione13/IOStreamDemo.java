@@ -49,15 +49,17 @@ public class IOStreamDemo {
         new StringReader(s2));
       PrintWriter out1 = new PrintWriter(
       	new BufferedWriter(new FileWriter("src/lezione13/IODemo.out")));
-      
+     // BufferedWriter out1 = new BufferedWriter(new FileWriter("src/lezione13/IODemo.out"));
+    		      
       int lineCount = 1;
       while((s = in4.readLine()) != null )
     	  out1.println(lineCount++ + ": " + s);
+    	  out1.write(lineCount++ + ": " + s);
       out1.close();
     } catch(EOFException e) {
       System.err.println("End of stream");
     }
-    
+     
     
     
     // 5. Storing & recovering data
@@ -74,6 +76,8 @@ public class IOStreamDemo {
       DataInputStream in5 = new DataInputStream(
         new BufferedInputStream(
           new FileInputStream("src/lezione13/Data.txt")));
+    
+     // System.out.println(in5.readUTF());
       // Must use DataInputStream for data:
       System.out.println(in5.readDouble());
       // Only readUTF() will recover the
