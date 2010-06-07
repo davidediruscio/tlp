@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class TestStatement {
     private static final String DRIVER_NAME="com.mysql.jdbc.Driver";
-    private static final String SQL = "SELECT * FROM title";
+    private static  String SQL = "SELECT * FROM title";
 
     public static void main( String[] args ) {
         try {
@@ -27,7 +27,23 @@ public class TestStatement {
                 System.out.println( "Isbn: " + resultSet.getString( "isbn" ) );
                 System.out.println( "-----------------------------------" );
               }
-            }
+           
+        
+          SQL ="INSERT INTO javalibrary.title " + "VALUES (NULL , 'titolo_prova', 1, 'prova_descrizione2', 'prova_autore2', 'prova_isbn2')";
+        
+          //connection.createStatement();
+          //statement.executeUpdate(SQL);
+           
+           SQL = "DELETE FROM javalibrary.title WHERE name = 'titolo_prova'";
+           statement.executeUpdate(SQL);
+           
+           
+         //  SQL = "UPDATE javalibrary.title SET name =  'newName' WHERE name = 'name2'";
+         //  statement.executeUpdate(SQL);
+           
+         //  statement.executeUpdate(SQL);
+        
+        }
             catch ( ClassNotFoundException e ) {
                  e.printStackTrace();
             }
