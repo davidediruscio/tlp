@@ -5,10 +5,11 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class TestPreparedStatement {
     private static final String DRIVER_NAME="com.mysql.jdbc.Driver";
-    private static final String SQL = "SELECT * FROM title WHERE name=?";
+    private static String SQL = "SELECT * FROM title WHERE name=?";
 
     public static void main( String[] args ) {
         try {
@@ -28,6 +29,8 @@ public class TestPreparedStatement {
                 System.out.println( "Isbn: " + resultSet.getString( "isbn" ) );
                 System.out.println( "-----------------------------------" );
             }
+            
+
             
             resultSet.close(); 
             preparedStatement.close(); 
