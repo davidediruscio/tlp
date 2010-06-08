@@ -17,7 +17,7 @@ public class TestPreparedStatement {
 
             Connection connection = DriverManager.getConnection(args[ 0 ], args[ 1 ], args[ 2 ] );
             PreparedStatement preparedStatement =  connection.prepareStatement( SQL );
-            preparedStatement.setString( 1, "name");
+            preparedStatement.setString( 1, "pluto");
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while ( resultSet.next() ) {

@@ -46,7 +46,7 @@ public class Worm implements Serializable {
   // Throw exceptions to console:
   public static void main(String[] args)
   throws ClassNotFoundException, IOException {
-    Worm w = new Worm(6, 'a');
+    Worm w = new Worm(6, 's');
     System.out.println("w = " + w);
     
     
