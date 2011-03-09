@@ -2,6 +2,7 @@ package lezione2;
 
 public class Main {
 
+	
 	public static void main(String[] args){
 		Test t1 = new Test();
 		Test t2 = new Test();
@@ -21,7 +22,9 @@ public class Main {
 		
 		
 		t1.stampa(4, 5);
-		//Test1.stampa(4,5);
+		Test.stampa(4, 5);
+		
+		//Test1.stampa();
 		
 	}
 }
