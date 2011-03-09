@@ -19,6 +19,12 @@ public class Polimorfismo {
 		// La riga seguente provoca un errore
 		// a run-time
 		//((Circle) s).draw();
+		
+		// La riga seguente provoca un errore
+		// a compile-time
+		//s.draw2();
+		
+		Circle.draw2();
 		s.draw();
 	}
 

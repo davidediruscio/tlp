@@ -2,7 +2,7 @@ package lezione1;
 
 public class Circle extends Shape {
 
-	public void draw2(){
+	public static void draw2(){
 		
 	}
 	
