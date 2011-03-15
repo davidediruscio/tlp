@@ -20,6 +20,7 @@ public class ShortCircuit {
 	  }
 	  
 	  public static void main(String[] args) {    
+		//  if(test1(0) & test2(2) & test3(2))      
 		  if(test1(0) && test2(2) && test3(2))      
 			  System.out.println("expression is true");    
 		  else      
