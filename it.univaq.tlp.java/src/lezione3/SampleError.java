@@ -12,6 +12,6 @@ public class SampleError {
 			System.out.println("valore di x "+x);
 		}
 		
-	}
+	} 
 	
 }

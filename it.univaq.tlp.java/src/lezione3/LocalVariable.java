@@ -1,7 +1,7 @@
 package lezione3;
 
 public class LocalVariable {
-
+ 
 	/**
 	 * @param args
 	 */

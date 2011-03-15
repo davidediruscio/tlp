@@ -21,5 +21,5 @@ public class Literals {
   double d1 = 1d; // double suffix
   double d2 = 1D; // double suffix
   double d3 = 47e47d; // 10 to the power
-   
+    
 } ///:~
