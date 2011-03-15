@@ -6,7 +6,7 @@ class Letter {
 }
 
 //Aliasing durante le chiamate di metodo
-
+ 
 public class PassObject {
  
   public static void f(Letter y) {

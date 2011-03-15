@@ -13,7 +13,7 @@ class ConvMethod {
 	}
 	
 	static long m(int a, int b) { 	
-		System.out.println("Sono m(long,long) ");
+		System.out.println("Sono m(int,int) ");
 		return a-b; 
 		
 	}
