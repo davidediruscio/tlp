@@ -2,7 +2,7 @@ package lezione3;
 
 public class VarInit {
 
-
+	int k;
 	 
 	public static void main (String args[]){
 		int k;

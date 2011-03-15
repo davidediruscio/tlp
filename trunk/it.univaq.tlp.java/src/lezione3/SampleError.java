@@ -6,7 +6,7 @@ public class SampleError {
 		boolean x=false;
 		boolean y=true;
 		//int x=4;
-		//int y=5;
+		//int y=1;
 		
 		while (x=y){
 			System.out.println("valore di x "+x);
