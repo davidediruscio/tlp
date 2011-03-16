@@ -7,6 +7,7 @@ public class Swap1 {
 		int temp = x;
 		x = y;
 		y = temp;
+		
 	}
 	
 	/**

@@ -10,11 +10,11 @@ class Point {
 		y=j;
 	}
 	
-	/*
+	
 	public String toString() {
 		return "Stampa dell'oggetto Point con valore x="+x+"e y="+y;
 	}
-	*/
+	
 }
 
 public class ArrayClassObj3 {

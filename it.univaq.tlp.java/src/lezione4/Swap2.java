@@ -19,6 +19,11 @@ public class Swap2 {
 		Point temp = p1;
 		p1 = p2;
 		p2 = temp;
+		
+		System.out.println("p1.x " + p1.x);
+		System.out.println("p2.x " + p2.x);
+		
+		
 	}
 	/**
 	 * @param args
@@ -26,7 +31,8 @@ public class Swap2 {
 	public static void main(String[] args) {
 		Point p1 = new Point(100,200);
 		Point p2 = new Point(300,400);
-		System.out.println("p1=" + p1);
+		//System.out.println("p1=" + p1.toString());
+		System.out.println("p1=" + p1);		
 		System.out.println("p2=" + p2);
 		swap( p1, p2 );
 		System.out.println("p1=" + p1);
