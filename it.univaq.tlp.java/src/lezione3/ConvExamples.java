@@ -1,7 +1,14 @@
 package lezione3;
 
+
+
 class ConvExamples {                      
-    public static void main(String[] args) {
+
+	public static void myFunction(int i){
+		
+	}
+	
+	public static void main(String[] args) {
             // Casting conversion  of a float literal to
             // type int. Without the cast operator, this would
             // be a compile-time error, because this is a
@@ -31,6 +38,8 @@ class ConvExamples {
             // to type double, needed because the method Math.sin
             // accepts only a double argument:
             double d = Math.sin(f);
+            
+            //myFunction(f); An explicit cast is requireed
 
             // Two string conversions of f and d:
             System.out.println("Math.sin(" + f + ")==" + d);
