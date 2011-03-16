@@ -22,6 +22,10 @@ public class Casting {
 		//Long l = (Long)p; 		//Errore in compilazione
 		//int i = (int) p; 			//Errore in compilazione
 		
+		//cp.setColor(1);
+		//p2.setColor(2);
+		//((ColoredPoint)p2).setColor(2);
+		//((ColoredPoint) p).setColor(4);
 	}
 }
 
