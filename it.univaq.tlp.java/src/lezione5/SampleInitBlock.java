@@ -9,7 +9,7 @@ class A1 {
 	
 	int x = 200;
 	static int y;
-	//A1 a1 = new A1();		// Questo da errore a run-time
+	//A1 a1 = new A1();		// Questo da errore a run-time. Vedere Self.java
 	
 	{						// Blocco di inizializzatore di istanza
 		Integer num = null;
