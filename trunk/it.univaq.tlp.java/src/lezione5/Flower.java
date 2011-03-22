@@ -18,7 +18,7 @@ public class Flower {
   }
   Flower(String s, int petals) {
     this(petals);
- //   this(s); // Can't call two!
+    //this(s); // Can't call two!
     this.s = s; // Another use of "this"
     System.out.println("String & int args");
   }
