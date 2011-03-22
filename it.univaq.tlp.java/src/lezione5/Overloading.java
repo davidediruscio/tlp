@@ -23,6 +23,7 @@ class Tree {
     System.out.println("Planting a seedling");
     height = 0;
   }
+  
   Tree(int i) {
     System.out.println("Creating new Tree that is "
       + i + " feet tall");

@@ -15,14 +15,18 @@ class C {
 class A extends C {
 	
 	public A() {
-		System.out.println("Sono il costruttore di A");
+		System.out.println("Sono il costruttore di default di A");
 	}
 	
+	/*public A(int i){
+		System.out.println("Sono il costruttore di A(int)");
+	}*/
 }
 
 class B extends A {
 	
 	public B() {
+		//super(5);
 		System.out.println("Sono il costruttore di B");
 	}
 	
