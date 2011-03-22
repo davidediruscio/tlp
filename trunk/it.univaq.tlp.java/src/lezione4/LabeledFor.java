@@ -8,8 +8,9 @@ public class LabeledFor {
 
   public static void main(String[] args) {
     int i = 0;
+    int j = 0;
     outer: // Can't have statements here
-    for(; true ;) { // infinite loop
+    for(; true ; j++) { // infinite loop
       inner: // Can't have statements here
       for(; i < 10; i++) {
         System.out.println("i = " + i);
@@ -30,6 +31,7 @@ public class LabeledFor {
           continue outer;
         }
         if(i == 8) {
+        System.out.println("j.." + j);
           System.out.println("break outer");
           break outer;
         }
