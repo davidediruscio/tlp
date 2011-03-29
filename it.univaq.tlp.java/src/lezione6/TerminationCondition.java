@@ -40,10 +40,10 @@ public class TerminationCondition {
   public static void main(String[] args) {
     Book novel = new Book(true);
     // Proper cleanup:
-    // novel.checkIn();
+    novel.checkIn();
     // Drop the reference, forget to clean up:
     new Book(true);
-    //new Book2(true);
+    new Book2(true);
      novel = null;
     // Force garbage collection & finalization:
     System.gc();				// In questo modo mi accorgo se c'e' qualche 
