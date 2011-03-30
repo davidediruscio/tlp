@@ -40,6 +40,7 @@ public class Lunch {
     System.out.println("Stampo priv2.f()");
     priv2.f();
     
+   
     Soup priv3 = Soup.makeSoup();
     System.out.println("Stampo priv3.f()");
     priv3.f();

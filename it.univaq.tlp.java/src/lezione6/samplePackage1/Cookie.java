@@ -9,7 +9,7 @@ public class Cookie {
 	  }
 	 // void bite() { System.out.println("bite"); }
 	  // public void bite() { System.out.println("bite"); }
-	  // protected void bite() { System.out.println("bite"); }
+	 protected void bite() { System.out.println("bite"); }
 	  protected static void bite2() {}	
 
 } 

@@ -9,7 +9,7 @@ public class ChocolateChip extends Cookie {
 	  }
 	  public static void main(String[] args) {
 	    ChocolateChip x = new ChocolateChip();
-	     // x.bite(); // Can't access bite unless bite is protected
+	   x.bite(); // Can't access bite unless bite is protected
 	  }
 	} ///:~
 

@@ -23,10 +23,13 @@ class Cups {
 }
 
 /* 
- * Gli inizializzatori static per Cups entrano in funzione o quando l'accesso dell'oggetto static c1 avviene 
+ * Gli inizializzatori static per Cups entrano in funzione o 
+ * quando l'accesso dell'oggetto static c1 avviene 
  * per (1), o quando (1) è commentata e (2) invece no
- * Se entrambe (1) e (2) vengono commentate, l'inizializzazione static per Cups non si verifica mai
- * Se una o entrambe (2) non sono commentate, l'inizializzazione static avviene solo una volta
+ * Se entrambe (1) e (2) vengono commentate, l'inizializzazione 
+ * static per Cups non si verifica mai
+ * Se una o entrambe (2) non sono commentate, l'inizializzazione 
+ * static avviene solo una volta
  */
 public class ExplicitStatic {
  
