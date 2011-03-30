@@ -8,6 +8,7 @@ class Point3 {
 	   {
 	     x = 600;
 	     y = 400;
+	     System.out.println("Sono dentro il blocco di inizializzazione");
 	   }
 
 	   Point3() {

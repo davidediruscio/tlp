@@ -28,6 +28,7 @@ public class Static {
 		A4 a1 = new A4();
 		a1.l++;
 		a1.x++;
+		//A4.x++;
 		A4 a2 = new A4();
 		System.out.println("a2.l: "+ a2.l + " a2.x: " + a2.x);
 		
