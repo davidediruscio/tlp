@@ -38,7 +38,7 @@ public class StormyInning extends Inning implements Storm {
   // must deal with the base constructor exceptions:
   public StormyInning()
     throws RainedOutException, BaseballException {}			//Per esempio se viene cancellato BaseballException c'e'
-  													//un errore di compilazione
+  															//un errore di compilazione
 
   public StormyInning(String s) 
     throws FoulException, BaseballException {}
