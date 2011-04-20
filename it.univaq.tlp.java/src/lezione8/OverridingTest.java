@@ -26,6 +26,8 @@ public class OverridingTest {
 		Sub s = new Sub();
 		System.out.println(s.greeting() + ", " + s.name());
 		
+		System.out.println("Test con cast " + ((Sub) b).greeting()); 
+		
 		//System.out.println((new Sub()).greeting() + ", " + s.name());	//(1)
 		//System.out.println(Sub.greeting() + ", " + s.name());
 		

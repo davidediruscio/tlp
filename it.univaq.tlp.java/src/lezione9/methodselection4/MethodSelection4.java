@@ -25,7 +25,7 @@ public class MethodSelection4 {
 		B a2 = new B();
 		A a3 = new B();
 
-		//!System.out.println("a1.method(a1) vale " + a1.method(a1)); NoSuchMethod 
+		//System.out.println("a1.method(a1) vale " + a1.method(a1)); //NoSuchMethod 
 		System.out.println("a1.method(a2) vale " + a1.method(a2));
 		//!System.out.println("a1.method(a3) vale " + a1.method(a3)); NoSuchMethod 
 		System.out.println("a2.method(a1) vale " + a2.method(a1));

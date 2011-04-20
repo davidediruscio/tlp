@@ -20,7 +20,7 @@ public final class PhoneNumber {
 	  }
 	   
 	   //Prova a commentare la definizione del metodo
-	  
+	 
 	  public boolean equals(Object o) {
 	     if (o == this) return true;					//Proprietà riflessiva
 	     if (!(o instanceof PhoneNumber)) return false;
@@ -45,8 +45,8 @@ class PhoneNumberTest {
 		PhoneNumber p1 = new PhoneNumber(888,222,777);
 		PhoneNumber p2 = new PhoneNumber(888,222,777);
 
-		float f = Float.parseFloat("9.4");
-
+		//float f = Float.parseFloat("9.4");
+		p1=p2;
 		System.out.println(p1.equals(p2));
 		System.out.println(p1.hashCode());
 		System.out.println(p1.hashCode());

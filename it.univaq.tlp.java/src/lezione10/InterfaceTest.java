@@ -13,7 +13,7 @@ interface Interace2 extends Interface1{
 	void h();
 }
 
-//class C10 extends C1 {	ERRORE	
+//class C10 extends C1 {	// ERRORE	
 //}
 
 

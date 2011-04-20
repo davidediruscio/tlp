@@ -33,7 +33,7 @@ public class SlowPoint extends Point3 {
 	
 	//!private void m5() {} //m5() di Point3 è di package e pertanto non può essere 
 							//private in SlowPoint
-
+	
 	static int limit( int d, int limit) {
 		return (d > limit) ? limit : ( (d < - limit) ? limit : d ); 	
 	}

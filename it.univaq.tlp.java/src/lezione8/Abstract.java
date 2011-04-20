@@ -11,9 +11,9 @@ class Node extends Tree {
     this.left = left;
     this.right = right;
   }
- // int getSize() {
- //    return left.getSize() + right.getSize();	//	Errore perche' la classe Tree non ha il metodo getSize()
- // }
+  //int getSize() {
+  //   return left.getSize() + right.getSize();	//	Errore perche' la classe Tree non ha il metodo getSize()
+  //}
 }
 class Leaf extends Tree {
   String s;

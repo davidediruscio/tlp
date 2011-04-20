@@ -14,7 +14,6 @@ public class TestMultiCheckedException {
           String linea = null;
           while ( ( linea = reader.readLine() ) != null ) {
                 System.out.println( "linea letta = " + linea );
-
           }
         }
         catch ( FileNotFoundException e ) {
@@ -22,9 +21,9 @@ public class TestMultiCheckedException {
         }
         catch ( IOException e ) {
             System.out.println( "Eccezione in lettura!" );
-         }
-         finally {
-        	 System.out.println("Blocco eseguito");
+        }
+        finally {
+        	System.out.println("Blocco eseguito");
               if ( reader != null ) {
                   try {
                       reader.close();
@@ -33,8 +32,6 @@ public class TestMultiCheckedException {
                       //Do nothing
                   }
               }
-          }
-      }
-  }
-
-
+        }
+   }
+}
