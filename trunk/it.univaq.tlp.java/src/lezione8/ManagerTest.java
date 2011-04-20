@@ -26,8 +26,17 @@ public class ManagerTest {
 	      
 	      System.out.println(staff[0].getSalary());
 	      boss.setBonus(5000);         	//OK
-	      // staff[0].setBonus(5000);   	//ERRORE
-	      // Manager m = staff[2]; 		//ERRORE    
+	      
+	  
+	       //staff[0].setBonus(5000);   	//ERRORE
+	       
+	      
+	       /*Manager m = (Manager) staff[0];
+	       Manager m = (Manager) staff[1];
+	       m.setBonus(7000);
+	       */
+	      
+	       // Manager m = staff[2]; 		//ERRORE    
 	      System.out.println(staff[0].getSalary());
 	  
 	      

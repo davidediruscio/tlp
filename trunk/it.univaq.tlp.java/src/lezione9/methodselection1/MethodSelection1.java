@@ -44,7 +44,7 @@ public class MethodSelection1  {
 		System.out.println("a3.method(a1) vale " + a3.method(a1));
 		System.out.println("a3.method(a2) vale " + a3.method(a2));
 		System.out.println("a3.method(a3) vale " + a3.method(a3));
-		//System.out.println("a4.method(a1) vale " + a4.method(a4));
+		System.out.println("a4.method(a4) vale " + a4.method(a4));
 		
 	}
 	

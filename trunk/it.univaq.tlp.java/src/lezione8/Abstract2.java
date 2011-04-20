@@ -46,6 +46,7 @@ public class Abstract2 {
 
 		System.out.println("Size di t " + t.getSize());
 		Leaf2 l = new Leaf2("f");
+		t.f();
 		l.f();
 	}
 

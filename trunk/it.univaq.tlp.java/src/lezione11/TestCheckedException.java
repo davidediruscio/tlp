@@ -6,9 +6,7 @@ public class TestCheckedException {
 	
 
 	public static void f() {
-		
 		System.out.println("Sono f()");
-		
 	}
 	
     public static void main(String[] args) {
@@ -31,25 +29,22 @@ public class TestCheckedException {
         }
         catch(FileNotFoundException e) {
              System.out.println("File non trovato");
-          }
-    
-         catch(IOException e) {
+        }
+        catch(IOException e) {
              System.out.println("File non trovato");
-          }
-      
-        
-         finally {
-             System.out.println("Blocco sempre eseguito");  
-        	 if (reader!=null) {
-                  try {
-                       reader.close();
-                  }
-                  	catch (IOException e) { //Do nothing }
-                  }
-               }
-         }
-         
-         System.out.println("Sono dopo finally");
-         f();
-    }
+        }
+        finally {
+        	System.out.println("Blocco sempre eseguito");  
+        	if (reader!=null) {
+                 try {
+                      reader.close();
+                 }
+                 catch (IOException e) { 
+                	 //Do nothing 
+                 }
+            }
+        }  
+        System.out.println("Sono dopo finally");
+        f();
+   }
 }
