@@ -1,6 +1,6 @@
 package lezione6.Latin;
 
-import lezione6.Greek.*;
+import lezione6.Greek.Alpha2;
 
 public class Delta extends Alpha2{
 
