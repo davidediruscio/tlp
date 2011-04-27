@@ -16,8 +16,9 @@ public class FinallyWorks {
         System.out.println("No exception");
       } catch(ThreeException e) {
         System.out.println("ThreeException");
+        //break; // Togliere il break nel finally
       } finally {
-        System.out.println("In finally clause");
+        System.out.println("In finally clause, valore di count " + count);
         if(count == 2) break; // out of "while"
       }
     }
