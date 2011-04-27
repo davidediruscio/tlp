@@ -17,10 +17,10 @@ public class AlwaysFinally {
         System.out.println("finally in 2nd try block");
       }
     } catch(FourException e) {
-      System.err.println(
+      System.out.println(
         "Caught FourException in 1st try block");
     } finally {
-      System.err.println("finally in 1st try block");
+      System.out.println("finally in 1st try block");
     }
     
   }
