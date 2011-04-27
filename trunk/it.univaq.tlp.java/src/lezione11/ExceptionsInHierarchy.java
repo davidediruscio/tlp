@@ -8,12 +8,20 @@ class MyException31 extends Exception {}		//(1)
 class MyException32 extends Exception {}
 class MyException33 extends Exception {}
 
+
+
+interface MyInterface {
+	public void m1() throws MyException31;
+}
+
 class Base {
 	public Base() throws MyException32  {}	
+	
 	public void m1() throws MyException30 {}
 }
 
-class Derived extends Base {
+
+class Derived extends Base  { //implements MyInterface{
 	
 	public Derived() throws MyException32 {}				
 	
@@ -21,7 +29,12 @@ class Derived extends Base {
 																//ma e' obbligatorio tener conto delle eccezioni dei costruttori
 																//della classe base.
 	
-	public void m1(){}
+	public void m1()  {}
+	
+	//public void m1() throws MyException31  {					// Provare ad usare "class Derived extends Base implements MyInterface"
+	//	throw new MyException31();
+	//}
+
 	//! public void m1() throws Exception {}
 	
 	//! public void m1() throws MyException31 {				//Se si usa (1) invece che (2) si ha un errore
@@ -45,6 +58,7 @@ public class ExceptionsInHierarchy {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		d1.m1();
 		
 	}
