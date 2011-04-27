@@ -5,13 +5,13 @@ public class TestStackOverflow {
 
     public static void main(String[] args) {
     	//int i=0;
-    	//try {
+    	try {
     		funzioneRicorsiva();
-    	//} catch (StackOverflowError e) {
-    	//	System.out.println("sono in StackOverflowError");
-    	//}
+    	} catch (StackOverflowError e) {
+    		System.out.println("sono in StackOverflowError");
+    	}
     	
-    	//System.out.println("Sono dopo try");   
+    	System.out.println("Sono dopo try");   
     }
     
     public static void funzioneRicorsiva() throws StackOverflowError {

@@ -44,6 +44,7 @@ public class TestCheckedException {
                  }
             }
         }  
+        
         System.out.println("Sono dopo finally");
         f();
    }
