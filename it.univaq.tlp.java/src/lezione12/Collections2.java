@@ -8,6 +8,7 @@ public class Collections2 {
         c.add( "ten" );
         c.add( "eleven" );
 
+        System.out.println( "Numero Elementi: " + c.size() );
         for ( Iterator i = c.iterator(); i.hasNext(); ) {
             String element = ( String ) i.next();
             System.out.println( "Elemento i-esimo:" + element );
