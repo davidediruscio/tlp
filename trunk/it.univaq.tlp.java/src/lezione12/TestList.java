@@ -44,9 +44,9 @@ public class TestList {
         System.out.println("Indice di k " + list.indexOf("k"));        
         list.add(1, "x");
         System.out.println("Indice di k " + list.indexOf("k"));
-      //  list.remove("x");
-        
-       // list.set(2, "y"); // Viene sollevata un'eccezione in quanto 
+      
+        //list.remove("x"); 
+        //list.set(2, "y"); // Viene sollevata un'eccezione in quanto 
         				    //non esiste la componente 2 della lista
         System.out.println(list);
 
