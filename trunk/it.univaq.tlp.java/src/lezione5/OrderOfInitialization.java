@@ -28,4 +28,4 @@ public class OrderOfInitialization {
     Card t = new Card();
     t.f(); // Shows that construction is done
   }
-} ///:~
+} 

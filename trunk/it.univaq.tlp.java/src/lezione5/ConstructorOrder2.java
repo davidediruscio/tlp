@@ -13,15 +13,14 @@ class A2 {
 
 class B2 extends A2 {
 	
-/*	public B2() {
-		
+	public B2() {
 		System.out.println("Sono il costruttore di B2");
 	}
-*/	
+	
 	public B2(int i) {
-		//super()
+		//super();
 		//super(i);
-		//this('c');
+		this('c');
 		System.out.println("Sono il costruttore di B2(int)");
 	}
 	
