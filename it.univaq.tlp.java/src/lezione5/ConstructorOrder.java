@@ -14,13 +14,14 @@ class C {
 
 class A extends C {
 	
+	//Prova a commentare il costruttore di default
 	public A() {
 		System.out.println("Sono il costruttore di default di A");
 	}
 	
-	/*public A(int i){
+	public A(int i){
 		System.out.println("Sono il costruttore di A(int)");
-	}*/
+	}
 }
 
 class B extends A {
@@ -43,6 +44,7 @@ public class ConstructorOrder {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		//B b = new B();
 		B b = new B(5);
 		// TODO Auto-generated method stub
 
