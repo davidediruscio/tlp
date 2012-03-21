@@ -6,6 +6,7 @@ class Point3 {
 	   int y = 200;
 	   
 	   {
+		 // Prova a commentare gli assegnamenti che seguono.
 	     x = 600;
 	     y = 400;
 	     System.out.println("Sono dentro il blocco di inizializzazione");
