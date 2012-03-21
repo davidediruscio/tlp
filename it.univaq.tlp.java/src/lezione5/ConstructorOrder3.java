@@ -9,12 +9,14 @@ class A3 {
 
 class B3 extends A3 {
 	int k;	//prova a spostare questa definizione dopo l'inizializzatore d'istanza
+	
 	{
 		
 		System.out.println("Sono l'inizializzatore di istanza di B3");
 		k++;
 	}
 
+	
 	public B3() {
 		super(6);
 		System.out.println("Sono il costruttore di B3");

@@ -18,22 +18,26 @@ class A extends C {
 	public A() {
 		System.out.println("Sono il costruttore di default di A");
 	}
-	
+
 	public A(int i){
 		System.out.println("Sono il costruttore di A(int)");
 	}
+
 }
 
 class B extends A {
 	
 	public B() {
 		//super(5);
+		//this(4);
 		System.out.println("Sono il costruttore di B");
+		//this(7);
 	}
 	
 	
 	public B(int i) {
-		//this();
+		this();
+//		super();
 		System.out.println("Sono il costruttore di B(int)");
 	}
 }
