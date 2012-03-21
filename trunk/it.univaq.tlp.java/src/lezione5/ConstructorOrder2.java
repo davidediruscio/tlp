@@ -11,7 +11,7 @@ class A2 {
 	}
 }
 
-class B2 extends A22 {
+class B2 extends A2 {
 	
 	public B2() {
 		System.out.println("Sono il costruttore di B2");
@@ -26,7 +26,7 @@ class B2 extends A22 {
 	
 	public B2(char i) {
 		//super();
-		//this();
+		this();
 		System.out.println("Sono il costruttore di B2(char)");
 	}
 }
